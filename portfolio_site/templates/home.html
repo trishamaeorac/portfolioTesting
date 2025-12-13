@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <header>
+        <nav>
+            <a href="{% url 'home' %}" {% if request.path == '/' %}class="active"{% endif %}>Home</a>
+            <a href="{% url 'projects' %}" {% if request.path == '/projects/' %}class="active"{% endif %}>Projects</a>
+            <a href="{% url 'contact' %}" {% if request.path == '/contact/' %}class="active"{% endif %}>Contact</a>
+        </nav>
+    </header>
+
+    <!-- Profile Section (No Container) -->
+    <section class="profile">
+        <img src="{% static 'images/b1i9ycuM.jpg' %}" alt="Profile Picture" class="profile-img">
+        <h1>Trisha Mae B. Oracoy</h1>
+        <p>Hi there! I'm Trisha, a fourth-year Information Technology student at 
+        Cebu Technological University – Ginatilan Campus. I’m passionate about using tech to solve real-world problems and make things work more efficiently.
+Right now, I’m diving into projects like the Coke Sales and Inventory System, using tools like React, Django, and MySQL. For me, the best part of tech is that there’s always something new to learn, and I love that constant opportunity to grow.
+I’m excited to keep learning and improving my skills, always looking for ways to create smarter solutions along the way.</p>
+    </section>
+    
+</body>
+</html>

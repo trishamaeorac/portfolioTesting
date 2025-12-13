@@ -1,0 +1,155 @@
+/* Container for Panda Animation */
+.panda-container {
+    position: absolute;
+    width: 100%;
+    height: 150px;  /* Adjust height for better visibility */
+    overflow: hidden;  /* Hide any overflowing content */
+    display: flex;  /* Align pandas horizontally */
+    justify-content: flex-start;
+    align-items: center;  /* Center pandas vertically */
+    bottom: 0;
+}
+
+/* Panda Animation */
+.panda {
+    position: absolute;
+    bottom: 0;
+    width: 80px;  /* Size of panda */
+    height: 80px; /* Size of panda */
+    animation: movePanda 10s linear infinite;
+}
+
+.panda:nth-child(1) {
+    left: -100px;  /* Initial position of panda */
+    animation-delay: 0s;
+}
+
+.panda:nth-child(2) {
+    left: -100px;  /* Initial position of panda */
+    animation-delay: 3s;
+}
+
+.panda:nth-child(3) {
+    left: -100px;  /* Initial position of panda */
+    animation-delay: 6s;
+}
+
+/* Panda Movement Animation */
+@keyframes movePanda {
+    0% {
+        left: -100px;  /* Starting from the left side */
+        bottom: 0;     /* On the bottom */
+    }
+    100% {
+        left: 100%;  /* Move to the right side, beyond the screen */
+        bottom: 10px; /* Slight movement up */
+    }
+}
+
+/* Panda Styling */
+.panda {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid #000;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Panda Head */
+.panda-head {
+  width: 60%;
+  height: 60%;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  border: 3px solid #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Panda Eyes */
+.panda-eye {
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+}
+
+.panda-eye.left {
+  left: 20%;
+}
+
+.panda-eye.right {
+  right: 20%;
+}
+
+/* Panda Ears */
+.panda-ear {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+}
+
+.panda-ear.left {
+  left: 10%;
+}
+
+.panda-ear.right {
+  right: 10%;
+}
+
+/* Panda Body */
+.panda-body {
+  width: 60%;
+  height: 50%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  border-radius: 50%;
+  border: 3px solid #000;
+}
+
+/* Panda Limbs (Legs) */
+.panda-leg {
+  width: 25px;
+  height: 35px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+.panda-leg.left {
+  left: 15%;
+}
+
+.panda-leg.right {
+  right: 15%;
+}
+
+/* Panda Limbs (Arms) */
+.panda-arm {
+  width: 20px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+}
+
+.panda-arm.left {
+  left: -5%;
+}
+
+.panda-arm.right {
+  right: -5%;
+}
