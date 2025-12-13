@@ -154,7 +154,6 @@ header nav a:hover::before {
     }
 }
 
-/* Contact Form Section */
 .contact {
     animation: fadeIn 1s ease-out;  /* Fade-in animation */
     background-color: transparent;  /* Remove the white background */
@@ -166,7 +165,10 @@ header nav a:hover::before {
     margin: 80px auto; /* Increased margin to avoid overlap with header */
     text-align: center;
     color: white;  /* Ensure text is readable */
+    opacity: 0;  /* Initially hidden */
+    animation-fill-mode: forwards; /* Ensures the element stays visible after the animation completes */
 }
+
 
 .contact h2 {
     font-size: 3rem;
@@ -236,13 +238,15 @@ header nav a:hover::before {
     margin-right: auto; /* Center the box horizontally */
 }
 
-/* Optional: Add animation for smoother visibility */
+/* Keyframes for Fade-In Effect */
 @keyframes fadeIn {
     0% {
         opacity: 0;
+        transform: translateY(20px);  /* Slightly lower at the start */
     }
     100% {
         opacity: 1;
+        transform: translateY(0);  /* Fully visible at the end */
     }
 }
 
