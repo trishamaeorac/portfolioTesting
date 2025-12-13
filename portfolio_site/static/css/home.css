@@ -1,6 +1,6 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    background: linear-gradient(135deg, #57c0f8 0%, #1d1f28 100%); /* Light blue to deep blue gradient */
+    background: linear-gradient(135deg, #57c0f8 0%, #1d1f28 100%); 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,9 +15,9 @@ body::before {
   width: 100%;
   height: 100%;
   background-image: 
-    radial-gradient(circle at 20% 50%, rgba(41, 43, 45, 0.4) 0%, transparent 50%),  /* Darker blue gradient */
-    radial-gradient(circle at 80% 80%, rgba(2, 94, 187, 0.3) 0%, transparent 50%),  /* Deeper blue gradient */
-    radial-gradient(circle at 40% 20%, rgba(0, 51, 102, 0.2) 0%, transparent 50%); /* Navy blue gradient */
+    radial-gradient(circle at 20% 50%, rgba(41, 43, 45, 0.4) 0%, transparent 50%),  
+    radial-gradient(circle at 80% 80%, rgba(2, 94, 187, 0.3) 0%, transparent 50%), 
+    radial-gradient(circle at 40% 20%, rgba(0, 51, 102, 0.2) 0%, transparent 50%); 
   animation: float 20s ease-in-out infinite;
   pointer-events: none;
   z-index: -1;
@@ -91,10 +91,10 @@ header nav a:hover::before {
 /* Center Profile Section */
 .profile {
     text-align: center;
-    margin-top: 150px;  /* Space for fixed header */
+    margin-top: 150px;  
     padding: 20px;
     width: 100%;
-    max-width: 600px;  /* Limit the width */
+    max-width: 600px;  
     background-color: transparent;
     box-shadow: none;
     margin-bottom: 50px;
@@ -105,14 +105,14 @@ header nav a:hover::before {
     /* Flexbox for centering */
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Vertically center */
-    align-items: center;  /* Horizontally center */
+    justify-content: center;  
+    align-items: center;  
 }
 
 /* Profile Image Animation */
 .profile-img {
-    width: 300px;  /* Increase the size of the image */
-    height: 300px;  /* Maintain aspect ratio */
+    width: 300px; 
+    height: 300px;  
     border-radius: 50%;
     border: 5px solid #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -121,26 +121,26 @@ header nav a:hover::before {
 }
 
 .profile-img:hover {
-    transform: scale(1.1);  /* Scale effect on hover */
+    transform: scale(1.1); 
 }
 
 
 /* Paragraph Fade-in Animation */
 .profile p {
-    opacity: 0;  /* Initially hidden */
-    animation: fadeInText 1.5s ease-out forwards;  /* Fade-in effect */
-    animation-delay: 0.5s;  /* Delay for paragraph after the profile */
+    opacity: 0;  
+    animation: fadeInText 1.5s ease-out forwards;  
+    animation-delay: 0.5s;  
 }
 
 /* Fade-In Animation */
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(20px);  /* Slightly lower at the start */
+        transform: translateY(20px); 
     }
     100% {
         opacity: 1;
-        transform: translateY(0);  /* Fully visible at the end */
+        transform: translateY(0);  
     }
 }
 
@@ -148,11 +148,11 @@ header nav a:hover::before {
 @keyframes fadeInText {
     0% {
         opacity: 0;
-        transform: translateX(-20px); /* Start from left */
+        transform: translateX(-20px); 
     }
     100% {
         opacity: 1;
-        transform: translateX(0);  /* Move to normal position */
+        transform: translateX(0); 
     }
 }
 

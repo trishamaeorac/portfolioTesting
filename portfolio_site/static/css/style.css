@@ -14,7 +14,7 @@ body {
 
 /* Header Section */
 header {
-    background-color: #0f5882;  /* Darker Blue for header to contrast with background */
+    background-color: #0f5882; 
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -29,19 +29,19 @@ header {
 /* Profile Section (No Background) */
 .profile {
     text-align: center;
-    margin-top: 120px;  /* Space for fixed header */
+    margin-top: 120px; 
     padding: 20px;
     width: 100%;
     max-width: 600px;
-    background-color: transparent;  /* Remove the background */
-    box-shadow: none;  /* Remove shadow */
+    background-color: transparent;  
+    box-shadow: none; 
     margin-bottom: 50px;
 }
 
 /* Profile Image (Larger Size) */
 .profile-img {
-    width: 200px;  /* Increase the size of the image */
-    height: 200px;  /* Maintain aspect ratio */
+    width: 200px;  
+    height: 200px;  
     border-radius: 50%;
     border: 5px solid #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -50,7 +50,7 @@ header {
 }
 
 .profile-img:hover {
-    transform: scale(1.1); /* Add scale effect on hover */
+    transform: scale(1.1); 
 }
 
 h1 {

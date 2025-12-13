@@ -1,6 +1,6 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    background: linear-gradient(135deg, #57c0f8 0%, #1d1f28 100%); /* Light blue to deep blue gradient */
+    background: linear-gradient(135deg, #57c0f8 0%, #1d1f28 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,9 +15,9 @@ body::before {
   width: 100%;
   height: 100%;
   background-image: 
-    radial-gradient(circle at 20% 50%, rgba(41, 43, 45, 0.4) 0%, transparent 50%),  /* Darker blue gradient */
-    radial-gradient(circle at 80% 80%, rgba(2, 94, 187, 0.3) 0%, transparent 50%),  /* Deeper blue gradient */
-    radial-gradient(circle at 40% 20%, rgba(0, 51, 102, 0.2) 0%, transparent 50%); /* Navy blue gradient */
+    radial-gradient(circle at 20% 50%, rgba(41, 43, 45, 0.4) 0%, transparent 50%), 
+    radial-gradient(circle at 80% 80%, rgba(2, 94, 187, 0.3) 0%, transparent 50%), 
+    radial-gradient(circle at 40% 20%, rgba(0, 51, 102, 0.2) 0%, transparent 50%); 
   animation: float 20s ease-in-out infinite;
   pointer-events: none;
   z-index: -1;
@@ -155,24 +155,24 @@ header nav a:hover::before {
 }
 
 .contact {
-    animation: fadeIn 1s ease-out;  /* Fade-in animation */
-    background-color: transparent;  /* Remove the white background */
-    padding: 40px 20px;  /* Increased padding for better spacing */
+    animation: fadeIn 1s ease-out; 
+    background-color: transparent; 
+    padding: 40px 20px;  
     width: 100%;
     max-width: 600px;
     border-radius: 15px;
-    box-shadow: none;  /* Remove any box shadow */
-    margin: 80px auto; /* Increased margin to avoid overlap with header */
+    box-shadow: none; 
+    margin: 80px auto; 
     text-align: center;
-    color: white;  /* Ensure text is readable */
-    opacity: 0;  /* Initially hidden */
-    animation-fill-mode: forwards; /* Ensures the element stays visible after the animation completes */
+    color: white;  
+    opacity: 0;  
+    animation-fill-mode: forwards; 
 }
 
 
 .contact h2 {
     font-size: 3rem;
-    margin-bottom: 20px;  /* Added spacing below title */
+    margin-bottom: 20px;  
 }
 
 /* Contact Form Inputs */
@@ -181,27 +181,27 @@ header nav a:hover::before {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: 1px solid #56626d;  /* Soft blue border */
+    border: 1px solid #56626d;  
     border-radius: 8px;
     font-size: 1em;
-    background-color: rgba(255, 255, 255, 0.2);  /* Slightly opaque white background */
-    color: white;  /* Keep text white for contrast */
-    transition: all 0.3s ease;  /* Smooth transition for hover and focus */
+    background-color: rgba(255, 255, 255, 0.2);  
+    color: white;  
+    transition: all 0.3s ease;  
 }
 
 /* Hover Effect on Input Fields */
 .contact input:hover,
 .contact textarea:hover {
-    border-color: #035780;  /* Lighter blue border on hover */
-    background-color: rgba(255, 255, 255, 0.3);  /* Lighter background */
+    border-color: #035780; 
+    background-color: rgba(255, 255, 255, 0.3);  
 }
 
 /* Focus Effect */
 .contact input:focus,
 .contact textarea:focus {
-    border-color: #035780;  /* Darker blue on focus */
+    border-color: #035780;  
     outline: none;
-    box-shadow: 0 0 8px rgba(102, 204, 255, 0.6);  /* Light shadow to highlight focus */
+    box-shadow: 0 0 8px rgba(102, 204, 255, 0.6); 
 }
 
 /* Send Button */
@@ -223,30 +223,30 @@ header nav a:hover::before {
 /* Success Message with Green Border and Smaller Width */
 #success-message {
     display: none;
-    color: #28a745; /* Green text color */
+    color: #28a745; 
     font-size: 1.1rem;
     text-align: center;
     margin-top: 20px;
-    padding: 10px 20px; /* Add padding for better spacing */
-    border: 2px solid #28a745; /* Green border */
-    background-color: #f4f4f4; /* Light gray background */
-    border-radius: 8px; /* Optional: rounded corners */
-    animation: fadeIn 0.5s ease-out forwards; /* Fade-in effect */
-    width: 60%; /* Adjust the width to be smaller */
-    max-width: 400px; /* Optional: add a maximum width */
+    padding: 10px 20px; 
+    border: 2px solid #28a745; 
+    background-color: #f4f4f4;
+    border-radius: 8px; 
+    animation: fadeIn 0.5s ease-out forwards; 
+    width: 60%; 
+    max-width: 400px; 
     margin-left: auto;
-    margin-right: auto; /* Center the box horizontally */
+    margin-right: auto; 
 }
 
-/* Keyframes for Fade-In Effect */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(20px);  /* Slightly lower at the start */
+        transform: translateY(20px);  
     }
     100% {
         opacity: 1;
-        transform: translateY(0);  /* Fully visible at the end */
+        transform: translateY(0);  
     }
 }
 
