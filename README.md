@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Portfolio Website
 
 This repository contains my personal portfolio website showcasing my profile, projects, and contact. The website is built using HTML, CSS, and JavaScript, with additional use of Django for backend.
@@ -62,3 +63,6 @@ Run the server:
 python manage.py runserver
 
 Open your browser and go to http://127.0.0.1:8000/ to view the site.
+=======
+# portfolioTesting
+>>>>>>> 8387be894209c85ae99682ee50a6d1b4607ac3ee
